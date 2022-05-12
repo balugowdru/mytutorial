@@ -1,0 +1,115 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(image/img5.jpg);
+    background-size:cover;
+    /* background-position: center; */
+    background-position:absolute;
+    /* position: absolute; */
+}
+  
+.menu{
+    background-color:cyan;
+    text-align: center;
+}
+.menu ul{
+    display: inline-flex;
+    list-style: none;
+    color: black;
+
+
+}
+.menu ul li{
+    width: 130px;
+    margin: 10px;
+    padding: 10px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color:black;
+    width: 10px;
+}
+.active, .menu ul li:hover{
+    background:greenyellow;
+    border-radius: 5px;
+
+}
+.sub-menu-1{
+     display: none; 
+
+}
+.menu ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color:cyan;
+}
+.menu ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu ul li:hover .sub-menu-1 ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px double rgb(12, 12, 12);
+    background: transparent;
+    text-align: left;
+    border-radius: 0%;
+}
+.menu ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.menu ul li:hover .sub-menu-1 ul li a:hover{
+    color:orangered;
+}
+.fa-solid{
+    float: right;
+}
+.sub-menu-2{
+    display: none;
+}
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background-color:cyan;
+}
+.login{
+    padding: 100px;
+    /* margin-bottom: 100%; */
+    margin-left: 5%;
+    margin-right: 90%;
+    /* width: 300px; */
+    background-position: center;
+    background-size: cover;
+}
+.box{
+    box-sizing: border-box;
+    border-top: 20px;
+    border-bottom: 20px;
+    border-radius: 10px;
+    height: 25px;
+    width: 200px;
+    box-shadow: 0 0 3px rgba(red, green, blue, alpha) ;
+    margin: 10% auto 0;
+    
+}
+.btn{
+   
+    height: 25px;
+    width: 60px;
+    border-radius: 5px;
+}
+.forgot{
+    /* padding: 20px; */
+    width: fit-content;
+    margin-left: 20%;
+    align-content: flex-start;
+}
